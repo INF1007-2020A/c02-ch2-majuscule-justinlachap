@@ -2,10 +2,13 @@
 # -*- coding: utf-8 -*-
 def majuscule(mot):
     resultat = ''
+    index = 0
     for lettre in mot:
-        # TODO completer la fonction ici
-        
-        resultat += lettre
+        if index == 0:
+            resultat += chr(ord(lettre)-32)
+        else:
+            resultat += lettre
+        index += 1 
     return resultat
 
 
